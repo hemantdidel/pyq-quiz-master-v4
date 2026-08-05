@@ -1,128 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>All Batches</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-body{
-    background:#f5f7fb;
-}
+    <title>All Exam Batches</title>
 
-header{
-    background:#0d47a1;
-    color:#fff;
-    padding:20px;
-    text-align:center;
-}
+    <meta name="description"
+        content="Join Rajasthan Government Exam Premium Batches - REET, RAS, SI, CET, Librarian, Patwar, VDO and more.">
 
-.container{
-    max-width:1200px;
-    margin:30px auto;
-    padding:20px;
+    <link rel="stylesheet" href="assets/css/style.css">
 
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-    gap:20px;
-}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-.card{
-    background:#fff;
-    border-radius:15px;
-    padding:25px;
-    text-align:center;
-    text-decoration:none;
-    color:#222;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
-    transition:.3s;
-}
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-.card:hover{
-    transform:translateY(-8px);
-}
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-.card h2{
-    margin-bottom:10px;
-}
-
-.card p{
-    color:#666;
-}
-</style>
+    <script defer src="assets/js/app.js"></script>
 
 </head>
+
 <body>
 
-<header>
-<h1>Government Exam Batches</h1>
-</header>
+    <!--========================
+            HEADER
+    =========================-->
 
-<div class="container">
+    <header class="header">
 
-<a href="2nd-grade/index.html" class="card">
-<h2>2nd Grade</h2>
-<p>Complete Batch</p>
+        <div class="container">
+
+            <a href="#" class="logo">
+
+                <span class="logo-icon">🎓</span>
+
+                <span class="logo-text">
+                    Batch Hub
+                </span>
+
+            </a>
+
+            <nav>
+
+                <a href="#">Home</a>
+
+                <a href="#categories">Categories</a>
+
+                <a href="#">Contact</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!--========================
+            HERO
+    =========================-->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="hero-badge">
+                Rajasthan Competitive Exams
+            </span>
+
+            <h1>
+
+                Find Your
+
+                <span>Perfect Batch</span>
+
+            </h1>
+
+            <p>
+
+                REET • RAS • SI • CET • Librarian • VDO • Patwar •
+                2nd Grade and many more premium batches.
+
+            </p>
+
+
+
+            <div class="search-box">
+
+                <input type="text"
+                    placeholder="Search Batch Category...">
+
+                <button>
+
+                    Search
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--========================
+        CATEGORY SECTION
+    =========================-->
+
+    <section class="categories" id="categories">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>
+
+                    Explore Categories
+
+                </h2>
+
+                <p>
+
+                    Select your exam category
+
+                </p>
+
+            </div>
+
+            <div class="category-grid">
+
+                <!-- REET -->
+
+<a href="batches/reet/index.html" class="category-card">
+
+    <div class="card-icon">📚</div>
+
+    <h3>REET</h3>
+
+    <p>Level 1 • Level 2 • Foundation • Crash Course</p>
+
+    <span>View Batches →</span>
+
 </a>
 
-<a href="librarian/index.html" class="card">
-<h2>Librarian</h2>
-<p>Complete Batch</p>
+
+<!-- RAS -->
+
+<a href="batches/ras/index.html" class="category-card">
+
+    <div class="card-icon">🏛️</div>
+
+    <h3>RAS</h3>
+
+    <p>Foundation • Prelims • Mains</p>
+
+    <span>View Batches →</span>
+
 </a>
 
-<a href="ras-foundation/index.html" class="card">
-<h2>RAS Foundation</h2>
-<p>Complete Batch</p>
+
+<!-- SI -->
+
+<a href="batches/si/index.html" class="category-card">
+
+    <div class="card-icon">👮</div>
+
+    <h3>SI</h3>
+
+    <p>Complete Preparation Batch</p>
+
+    <span>View Batches →</span>
+
 </a>
 
-<a href="si/index.html" class="card">
-<h2>SI Batch</h2>
-<p>Complete Batch</p>
+
+<!-- CET -->
+
+<a href="batches/cet/index.html" class="category-card">
+
+    <div class="card-icon">📝</div>
+
+    <h3>CET</h3>
+
+    <p>Graduate & Senior Secondary</p>
+
+    <span>View Batches →</span>
+
 </a>
 
-<a href="vdo/index.html" class="card">
-<h2>VDO Batch</h2>
-<p>Complete Batch</p>
+
+<!-- PATWAR -->
+
+<a href="batches/patwar/index.html" class="category-card">
+
+    <div class="card-icon">📍</div>
+
+    <h3>Patwar</h3>
+
+    <p>Complete Patwar Preparation</p>
+
+    <span>View Batches →</span>
+
 </a>
 
-<a href="patwar/index.html" class="card">
-<h2>Patwar Batch</h2>
-<p>Complete Batch</p>
+
+<!-- VDO -->
+
+<a href="batches/vdo/index.html" class="category-card">
+
+    <div class="card-icon">🏡</div>
+
+    <h3>VDO</h3>
+
+    <p>Village Development Officer</p>
+
+    <span>View Batches →</span>
+
 </a>
 
-<a href="cet/index.html" class="card">
-<h2>CET Batch</h2>
-<p>Complete Batch</p>
+
+<!-- LIBRARIAN -->
+
+<a href="batches/librarian/index.html" class="category-card">
+
+    <div class="card-icon">📖</div>
+
+    <h3>Librarian</h3>
+
+    <p>Grade III Complete Batch</p>
+
+    <span>View Batches →</span>
+
 </a>
 
-<a href="reet/index.html" class="card">
-<h2>REET Batch</h2>
-<p>Complete Batch</p>
+
+<!-- 2nd Grade -->
+
+<a href="batches/2nd-grade/index.html" class="category-card">
+
+    <div class="card-icon">🏫</div>
+
+    <h3>2nd Grade</h3>
+
+    <p>Subject Wise Premium Batches</p>
+
+    <span>View Batches →</span>
+
 </a>
 
-<a href="ldc/index.html" class="card">
-<h2>LDC Batch</h2>
-<p>Complete Batch</p>
+
+<!-- LDC -->
+
+<a href="batches/ldc/index.html" class="category-card">
+
+    <div class="card-icon">💼</div>
+
+    <h3>LDC</h3>
+
+    <p>Complete LDC Preparation</p>
+
+    <span>View Batches →</span>
+
 </a>
 
-<a href="police/index.html" class="card">
-<h2>Police Batch</h2>
-<p>Complete Batch</p>
+
+<!-- COMPUTER INSTRUCTOR -->
+
+<a href="batches/computer-instructor/index.html" class="category-card">
+
+    <div class="card-icon">💻</div>
+
+    <h3>Computer Instructor</h3>
+
+    <p>Basic + Advance Batches</p>
+
+    <span>View Batches →</span>
+
 </a>
 
-<a href="computer-instructor/index.html" class="card">
-<h2>Computer Instructor</h2>
-<p>Complete Batch</p>
+
+<!-- CONSTABLE -->
+
+<a href="batches/constable/index.html" class="category-card">
+
+    <div class="card-icon">🚔</div>
+
+    <h3>Constable</h3>
+
+    <p>Written + Physical Preparation</p>
+
+    <span>View Batches →</span>
+
 </a>
 
-</div>
+
+<!-- ALL COURSES -->
+
+<a href="batches/all/index.html" class="category-card special">
+
+    <div class="card-icon">🚀</div>
+
+    <h3>All Courses</h3>
+
+    <p>View Every Available Batch</p>
+
+    <span>Explore Now →</span>
+
+</a>
+        </div>
+
+    </section>
+
+
+    <!--========================
+            STATS
+    =========================-->
+
+    <section class="stats">
+
+        <div class="container">
+
+            <div class="stat-box">
+
+                <h2>100+</h2>
+
+                <p>Premium Batches</p>
+
+            </div>
+
+            <div class="stat-box">
+
+                <h2>10+</h2>
+
+                <p>Exam Categories</p>
+
+            </div>
+
+            <div class="stat-box">
+
+                <h2>24×7</h2>
+
+                <p>Anytime Access</p>
+
+            </div>
+
+            <div class="stat-box">
+
+                <h2>Latest</h2>
+
+                <p>Updated Content</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--========================
+            FOOTER
+    =========================-->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <h2>Batch Hub</h2>
+
+            <p>
+
+                Rajasthan Government Exam Batches
+
+            </p>
+
+            <small>
+
+                © 2026 All Rights Reserved.
+
+            </small>
+
+        </div>
+
+    </footer>
 
 </body>
+
 </html>
