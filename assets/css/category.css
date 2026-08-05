@@ -1,1 +1,356 @@
+/*==========================
+        CATEGORY HERO
+==========================*/
+
+.category-hero{
+
+    padding:150px 0 70px;
+
+    background:linear-gradient(135deg,#4f46e5,#2563eb);
+
+    color:#fff;
+
+}
+
+.category-hero .container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+
+}
+
+.badge{
+
+    display:inline-block;
+
+    background:rgba(255,255,255,.18);
+
+    padding:10px 18px;
+
+    border-radius:50px;
+
+    margin-bottom:18px;
+
+    font-size:14px;
+
+}
+
+.category-hero h1{
+
+    font-size:52px;
+
+    margin-bottom:18px;
+
+}
+
+.category-hero p{
+
+    max-width:650px;
+
+    line-height:1.8;
+
+    opacity:.9;
+
+}
+
+.hero-right{
+
+    min-width:320px;
+
+}
+
+.hero-right input{
+
+    width:100%;
+
+    padding:18px 22px;
+
+    border:none;
+
+    border-radius:50px;
+
+    font-size:16px;
+
+    outline:none;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+}
+
+
+
+/*==========================
+        BATCH GRID
+==========================*/
+
+.batch-list{
+
+    padding:80px 0;
+
+    background:#f5f7fb;
+
+}
+
+.batch-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+/*==========================
+        BATCH CARD
+==========================*/
+
+.batch-card{
+
+    display:block;
+
+    text-decoration:none;
+
+    background:#fff;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    color:#222;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.batch-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 55px rgba(79,70,229,.20);
+
+}
+
+.batch-card img{
+
+    width:100%;
+
+    height:210px;
+
+    object-fit:cover;
+
+}
+
+/*==================================
+        CARD CONTENT
+===================================*/
+
+.batch-content{
+
+    padding:25px;
+
+}
+
+.batch-content h2{
+
+    font-size:24px;
+
+    margin-bottom:12px;
+
+    color:#111827;
+
+    line-height:1.4;
+
+}
+
+.batch-content p{
+
+    color:#6b7280;
+
+    line-height:1.7;
+
+    margin-bottom:25px;
+
+}
+
+
+/*==================================
+        OPEN BUTTON
+===================================*/
+
+.batch-content span{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    background:linear-gradient(135deg,#4f46e5,#2563eb);
+
+    color:#fff;
+
+    padding:12px 22px;
+
+    border-radius:50px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.batch-card:hover .batch-content span{
+
+    transform:translateX(8px);
+
+}
+
+
+/*==================================
+        IMAGE ZOOM
+===================================*/
+
+.batch-card{
+
+    position:relative;
+
+}
+
+.batch-card img{
+
+    transition:.45s;
+
+}
+
+.batch-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+
+/*==================================
+        CARD BORDER
+===================================*/
+
+.batch-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:100%;
+
+    height:5px;
+
+    background:linear-gradient(90deg,#4f46e5,#06b6d4);
+
+}
+
+
+/*==================================
+        RESPONSIVE
+===================================*/
+
+@media(max-width:992px){
+
+.category-hero h1{
+
+font-size:42px;
+
+}
+
+}
+
+
+@media(max-width:768px){
+
+.category-hero{
+
+padding-top:150px;
+
+}
+
+.category-hero .container{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+}
+
+.hero-right{
+
+width:100%;
+
+min-width:100%;
+
+}
+
+.batch-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.batch-card img{
+
+height:200px;
+
+}
+
+}
+
+
+@media(max-width:480px){
+
+.category-hero h1{
+
+font-size:32px;
+
+}
+
+.category-hero p{
+
+font-size:15px;
+
+}
+
+.batch-content{
+
+padding:20px;
+
+}
+
+.batch-content h2{
+
+font-size:20px;
+
+}
+
+.batch-content p{
+
+font-size:14px;
+
+}
+
+}
 
